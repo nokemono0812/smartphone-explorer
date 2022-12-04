@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スマホサーチ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script type="text/javascript" src="script.js"></script>
+    <header>
+        <center><form><input type="text" id="search" placeholder="スマートフォンを検索"></form></center>
+    </header>
+    <div id="search-result_list"></div>
+    <div class="margin"></div>
+    <span id="filter"></span>
+    <span class="flex"><span class="app" id="app1">ぴったりなスマホ</span><span class="app" id="app2">Google特集</span><span class="app" id="app3">スマホ百科辞典</span><span class="app" id="app4">レビュー記事一覧</span></span>
+    <ul class="target-area">
+        <li>iPhone 14 Pro Max</li>
+        <li>iPhone 14 Pro</li>
+        <li>iPhone 14 Plus</li>
+        <li>iPhone 14</li>
+        <li>iPhone 13 Pro Max</li>
+        <li>iPhone 13 Pro</li>
+        <li>iPhone 13 Mini</li>
+        <li>iPhone 13</li>
+        <li>iPhone 12 Pro Max</li>
+        <li>iPhone 12 Pro</li>
+        <li>iPhone 12 Mini</li>
+        <li>iPhone 12</li>
+        <li>iPhone 11 Pro Max</li>
+        <li>iPhone 11 Pro</li>
+        <li>iPhone 11</li>
+        <li>iPhone XS Max</li>
+        <li>iPhone XS</li>
+        <li>iPhone X</li>
+        <li>iPhone XR</li>
+        <li>iPhone 8 Plus</li>
+        <li>iPhone 8</li>
+        <li>iPhone 7 Plus</li>
+        <li>iPhone 7</li>
+        <li>iPhone SE (第三世代)</li>
+        <li>iPhone SE (第二世代)</li>
+        <li>iPhone SE</li>
+        <li>Galaxy Z Fold4</li>
+        <li>Galaxy Z Flip4</li>
+        <li>Galaxy Z Fold3 5G</li>
+        <li>Galaxy Z Flip3 5G</li>
+        <li>Galaxy Z Fold2 5G</li>
+        <li>Galaxy Z Flip2 5G</li>
+        <li>Galaxy Z Fold</li>
+        <li>Galaxy Z Flip</li>
+        <li>Galaxy S22 Ultra</li>
+        <li>Galaxy S22</li>
+        <li>Galaxy S21 Ultra 5G</li>
+        <li>Galaxy S21+ 5G</li>
+        <li>Galaxy S21 5G</li>
+        <li>Galaxy S20 Ultra</li>
+        <li>Galaxy S20+</li>
+        <li>Galaxy S20</li>
+        <li>Galaxy S10 Ultra</li>
+        <li>Galaxy S10+</li>
+        <li>Galaxy S10e</li>
+        <li>Galaxy S10</li>
+        <li>Galaxy S9+</li>
+        <li>Galaxy S9</li>
+        <li>Galaxy A53 5G</li>
+        <li>Galaxy A52 5G</li>
+        <li>Galaxy A51 5G</li>
+        <li>Galaxy A50</li>
+        <li>Galaxy A23 5G</li>
+        <li>Galaxy A22 5G</li>
+        <li>Galaxy A21</li>
+        <li>Galaxy A20</li>
+        <li>Galaxy A21</li>
+        <li>Galaxy M23 5G</li>
+        <li>Google Pixel 7 Pro</li>
+        <li>Google Pixel 7</li>
+        <li>Google Pixel 6 Pro</li>
+        <li>Google Pixel 6</li>
+        <li>Google Pixel 6a</li>
+        <li>Google Pixel 5</li>
+        <li>Google Pixel 5a</li>
+        <li>Google Pixel 4 XL</li>
+        <li>Google Pixel 4</li>
+        <li>Google Pixel 4a (5G)</li>
+        <li>Google Pixel 4a</li>
+        <li>Xperia Pro I</li>
+        <li>Xperia Pro</li>
+        <li>Xperia 1 IV</li>
+        <li>Xperia 1 III</li>
+        <li>Xperia 1 II</li>
+        <li>Xperia 1</li>
+        <li>Xperia 5 IV</li>
+        <li>Xperia 5 III</li>
+        <li>Xperia 5 II</li>
+        <li>Xperia 5</li>
+        <li>Xperia 10 IV</li>
+        <li>Xperia 10 III</li>
+        <li>Xperia 10 II</li>
+        <li>Xperia 10</li>
+        <li>Xperia Ace III</li>
+        <li>Xperia Ace II</li>
+        <li>Xperia Ace</li>
+        <li>Xperia XZ3</li>
+        <li>Xperia XZ2 Premium</li>
+        <li>Xperia XZ2</li>
+        <li>Xperia XZ Premium</li>
+        <li>Xperia XZ Compact</li>
+        <li>Xperia XZ</li>
+        <li>Xiaomi 12S Ultra</li>
+        <li>Xiaomi 12S Pro</li>
+        <li>Xiaomi 12S</li>
+        <li>Xiaomi 12 Pro</li>
+        <li>Xiaomi 12</li>
+        <li>Xiaomi 12X</li>
+        <li>Xiaomi 12 Lite</li>
+        <li>Xiaomi 11T Pro</li>
+        <li>Xiaomi 11T</li>
+        <li>Xiaomi Civi 2</li>
+        <li>Xiaomi Civi</li>
+        <li>Mi 11 Ultra</li>
+        <li>Mi 11 Pro</li>
+        <li>Mi 11 Lite 5G</li>
+        <li>OPPO Find N</li>
+        <li>OPPO Find X5 Pro</li>
+        <li>OPPO Find X5</li>
+        <li>OPPO Find X4 Pro</li>
+        <li>OPPO Find X4</li>
+        <li>OPPO Find X3 Pro</li>
+        <li>OPPO Find X3</li>
+        <li>OPPO Find X2 Pro</li>
+        <li>OPPO Find X2</li>
+        <li>OPPO Find X Pro</li>
+        <li>OPPO Find X</li>
+        <li>OPPO Reno9 Pro+</li>
+        <li>OPPO Reno9 Pro</li>
+        <li>OPPO Reno9</li>
+        <li>OPPO Reno8 Pro+</li>
+        <li>OPPO Reno8 Pro</li>
+        <li>OPPO Reno8</li>
+        <li>OPPO Reno8 Lite</li>
+        <li>OPPO Reno7 Pro 5G</li>
+        <li>OPPO Reno7 5G</li>
+        <li>OPPO Reno7 SE 5G</li>
+        <li>OPPO Reno6 Pro+ 5G</li>
+        <li>OPPO Reno6 Pro 5G</li>
+        <li>OPPO Reno6 5G</li>
+        <li>OPPO Reno5 Pro+ 5G</li>
+        <li>OPPO Reno5 Pro 5G</li>
+        <li>OPPO Reno5 5G</li>
+        <li>OPPO Reno4 Pro 5G</li>
+        <li>OPPO Reno4 5G</li>
+        <li>OPPO Reno3 Pro 5G</li>
+        <li>OPPO Reno3 5G</li>
+        <li>OPPO Reno2</li>
+        <li>OPPO Reno 10x Zoom</li>
+        <li>OPPO Reno7 A</li>
+        <li>OPPO Reno5 A</li>
+        <li>OPPO Reno3 A</li>
+        <li>OPPO Reno A</li>
+        <li>OPPO A55s 5G</li>
+        <li>OPPO A54 5G</li>
+        <li>OPPO A73</li>
+        <li>OPPO A5 2020</li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="jqueryCode.js"></script>
+</body>
+</html>
